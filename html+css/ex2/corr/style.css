@@ -1,0 +1,17 @@
+#diaporama{
+    float: left;
+    padding: 20px;
+}
+ul.galerie li{
+    float: left;
+    margin: 0 10px;
+    border:1px solid #ddd;
+    list-style: none;
+}
+ul.galerie li img:hover{
+    transform: scale(1.5) rotate(25deg);
+    box-shadow: 4px 4px 10px rgba(0,0,0,5);
+}
+ul.galerie li img{
+    transition: transform 1s ease-in-out;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form method="post" action="tp1.html">
+        <b>vos coordonnées</b>
+        <div>
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" placeholder="votre nom"/></br>
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" placeholder="votre prenom"/></br>
+        <label for="dt">Date de Naissance:</label>
+        <input type="date" name="dt"/></br>
+        <label for="mail">Mail:</label>
+        <input type="text" name="mail" placeholder="votre mail"/></br>
+        <label for="site">Votre site:</label>
+        <input type="text" name="site" /></br>
+        <label for="code">Code:</label>
+        <input type="password" name="code" /></br>
+       <label for="gender">Genre:</label>
+        <input type="radio" name="gender" />Homme
+        <input type="radio" name="gender" />Femme</br>
+        <label for="pays">Pays:</label>
+        <select name="pays">
+        <option selected hidden > votre pays</option> 
+        <option>tunisie</option> 
+         <option>algerie</option> 
+          <option>moroco</option> 
+          </select>
+        </div>
+        <b>vos gout</b>
+        <div>
+        <input type="checkbox" name="gout[]"/>Tarte aux fraises a la creme d'amandes</br>
+        <input type="checkbox" name="gout[]"/>Tarte aux prunes</br>
+        <input type="checkbox" name="gout[]"/>Tarte rustique aux mirabelles de lorraine,noisettes et miel</br>
+        <textarea cols=30 rows=5 >Décrivez vos gouts en détail
+        </textarea>
+        </div>
+        <b>Envoyer nous votre photo</b>
+        <div>
+        <input type="file" value="choisir un fichier"/></br>
+         <input type="reset" value="Effacer"/>
+        <input type="submit" value="Envoyer"/>
+       
+        
+        </div>
+        </form>
+    
+</body>
+</html>

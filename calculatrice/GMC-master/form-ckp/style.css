@@ -1,0 +1,115 @@
+.adaf{
+  font-size: 32px;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 700;
+
+line-height: 51.2px;
+
+color: rgb(72, 94, 116)
+}
+.adaf>span{color: white}
+body{background: #92BDE7}
+.logo{
+  width: 312px
+}
+#form{
+  display: flex;
+  justify-content: center
+}
+.part1{
+width: 312px;
+padding: 30px;
+background: #C9E6FF
+}
+.part1>h3{font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  font-size: 18.72px;
+  
+  font-weight: 700;
+  
+  line-height: 29.952px;
+  
+color: rgb(72, 94, 116)}
+li{
+  list-style-type: none;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+font-size: 16px;
+
+font-weight: 400;
+
+line-height: 25.6px;
+
+color: rgb(72, 94, 116)
+}
+.margin1{
+  margin-bottom: 17px
+}
+.part2{
+  width: 695px;
+  padding: 30px;
+  background:#F9FEFF
+}
+.part2>p{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+font-size: 18.72px;
+
+font-weight: 700;
+
+line-height: 29.952px;
+
+color: rgb(72, 94, 116)
+}
+.line1{
+  display: flex;
+  justify-content: left
+}
+.line1-part{
+  display: flex;
+  flex-direction: column
+}
+label{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+Font-size: 16px;
+
+Font-weight: 400;
+
+Line-height: 25.6px
+;
+color: rgb(72, 94, 116);
+}
+.select{
+  margin-left: 10px
+}
+.commun{ margin-right: 10px;
+width: 338px;
+height: 38px;
+background: white;
+border: #C9E6FF solid 1px
+}
+.ali{
+  background: white;
+border: #C9E6FF solid 1px
+}
+.btn{
+  width: 100%;
+  height: 42px;
+  margin-top:30px;
+  background: #C9E6FF;
+  border: none;
+ font-family: Arial;
+
+Font-size: 13.3333px;
+
+Font-weight: 400;
+
+Line-height: normal;
+
+color: black
+}
+.btn:hover{
+  color: white;
+transition:  All 0.4 ease-in-out
+}

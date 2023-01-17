@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body{
+        background-color: rgba(181, 177, 177, 0.621);
+    }
+    label[for=pr] {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 107px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+label[for=d] {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 30px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+
+label {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 130px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+b,input[type=radio]{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+input[type=date] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ input[type=text] {
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+select{
+  width: 64%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+textarea {
+  width: 93%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+    input:focus {
+  border: 3px solid aqua;
+}
+input::placeholder{
+  color: rgba(64, 10, 170, 0.367);
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius:5%;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #1075f9c1;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius:5%;
+  cursor: pointer;
+}
+    table, td, th {
+      border: 1px solid;
+    }
+    th{
+        background-color: green;
+    }
+    td{
+      background-color: white;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+  
+  </style>
+  <body>
+    <form>
+     <h1> <b>Mes coordonnées</b></h1>
+     <hr/>
+      <div>
+      <label for="nom">Nom:</label>
+      <input type="text" id="name"  placeholder="votre nom" onblur="return Verif_name();"/><br/>
+      <div id="err_name"> </div><br/>
+            
+      <label for="pr">Prénom:</label>
+      <input type="text" id="prenom" placeholder="votre prenom" onblur="return Verif_prenom();" /></br>
+      <div id="err_prenom"></div><br/>
+      <label for="d">Date de Naissance:</label>
+      <input type="date" name="dt" id="date"/></br>
+      <label >Mail:</label>
+      <input type="text"  placeholder="votre mail" id="mail" onblur="return Verif();"/></br>
+ <div id="err_mail">
+</div><br/>
+      <label >Genre:</label>
+      <div id="radio">
+      <input type="radio" name="gender" class="gender" value="Homme"/>Homme
+      <input type="radio" name="gender" class="gender" value="Femme"/>Femme
+    </div></br>
+    
+      <label for="pays">Pays:</label>
+      <select name="pays" id="option">
+      <option selected hidden > votre pays</option> 
+      <option>tunisie</option> 
+       <option>algerie</option> 
+        <option>moroco</option> 
+        </select>
+      </div>
+      <b>Mes skills</b><br/>
+      <input type="checkbox" name="skills" value="DEVELOPPEMENT " id="DEVELOPPEMENT"/>DEVELOPPEMENT</br>
+      <input type="checkbox" name="skills" value="SYS ADMIN"  id="SYS ADMIN" />SYS ADMIN</br>
+      <input type="checkbox" name="skills" value="DEVOPS" id="DEVOPS"/>DEVOPS</br>
+    <div id="msg"></div><br/>
+      <textarea cols=30 rows=5 name="textA" placeholder="EXPERIENCE" id="textA">
+      </textarea><br/>
+
+       <input type="reset" value="Effacer"/>
+ 
+      </div>
+      </form>
+           <input type="submit" value="Envoyer" onclick="Create_form();Create_table();Verif_check()"/>
+      <div id="form">
+
+    </div><br/><br/>
+
+
+     <div id="req">
+
+    </div>
+   
+  </body>
+  <script src="index.js"></script>
+</html>

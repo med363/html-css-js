@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white ;
+        }
+        header{
+            background-color: #1abc9c;
+            color: aliceblue;
+            text-align: center;
+          
+        }
+        nav{
+            background-color: #3498db;
+            height: 200px;
+        }
+        article{
+            background-color: darkred;
+            color: white;
+            text-align: center;
+        }
+        footer{
+            background-color: #e67e22;
+            color:white;
+            text-align: center;
+        }
+        header,footer,article,nav{
+            padding: 15px;
+        }
+        header,footer{
+            height: 80px;
+        }
+        html, body{
+            height: 100%;
+        }
+        main{
+            display: flex;
+            height: :calc(100%-160px);
+        }
+        main nav{
+            width : 200px;
+            background-color: #3498db;
+        }
+        main article{
+            flex :1;
+            background-color: #9b59b6;
+        }
+         @media(max-width:600px){
+            main {
+                flex-direction: column;
+            }
+            main article {
+                order:1;
+            }
+            main nav {
+                width: 100%;
+                order: 2;
+                background-color: #3498db;
+
+            }
+         }
+   
+</style>
+<body>
+   <header>
+    <h1>Bienvenue sur le site de MA BOUTIQUE !</h1>
+   </header> 
+   <main>
+    <nav role="navigation">
+        <a href="#">Magasin</a><br/>
+        <hr/>
+        <a href="#">Femme</a><br/>
+        <hr/>
+
+        <a href="#">Homme</a><br/>
+        <hr/>
+
+        <a href="#">Enfant</a><br/>
+        <hr/>
+
+        <a href="#">Promotion</a><br/>
+        <hr/>
+
+        <a href="#">A propos de la marque</a><br/>
+    </nav>
+   <article>
+    <div>
+    <p>VOUS ALLEZ L'APPRECIER</p>
+    <p>Plus de soldes ?</p>
+    <p>Continuez votre shopping</p>
+</div>
+   </article>
+</main>
+<footer>
+    <p>@ Prénom Nom</p>
+</footer>
+</body>
+</html>

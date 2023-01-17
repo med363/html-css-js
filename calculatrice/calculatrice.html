@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        margin-top: 100px;
+        display: flex;
+        align-content: stretch;
+    justify-content: space-evenly;
+
+    }
+    input[type=text] {
+  width: 60%;
+  padding: 12px 100px 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+
+input[type=text]:focus {
+  width: 60%;
+  padding: 12px 100% 12px 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  
+}
+
+
+input[type=button] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 10%;
+  margin: 4px 2px;
+  border-radius:50%;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #1075f9c1;
+  border: none;
+  color: white;
+  width: 10%;
+  padding: 5px;
+  margin: 4px 2px;
+  border-radius:50%;
+  cursor: pointer;
+}
+
+    
+</style>
+<body>
+    <form name="calcul">
+        <h1>Calculatrice</h1>
+
+        <input type="text" name="x" id="var1" placeholder="Entrer 1er paramétre"/><br/>
+        <input type="text" name="y" id="var2" placeholder="Entrer 2eme paramétre"/>
+<div>
+    <input type="button" value="+" id="plus" onclick="somme()"/>
+    <input type="button" value="-" id="mins" onclick="sou()"/>
+    <input type="button" value="*" id="fois" onclick="prod()"/>
+    <input type="button" value="/" id="division" onclick="division()"/>
+</div>
+<input type="text" id="resultat" value="0" placeholder="resultat..."/>
+
+
+    </form>
+</body>
+<script src="cal.js"></script>
+</html>

@@ -1,0 +1,10 @@
+h1 {
+    background-color: blueviolet;
+}
+
+.rect {
+    background-color: cornflowerblue;
+    height: 200px;
+    border-color: black;
+    border-style: solid;
+}

@@ -1,0 +1,79 @@
+::-webkit-scrollbar {
+    width: 4px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+body{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: #5F5F5F;
+}
+h2{
+	margin-top: 0.5em;
+	color: white;
+}
+.element{
+	height: 90vh;
+	background-color: white;
+	border-right: 2px solid black;
+}
+#previewcontainer{
+	height: 95vh;
+	overflow-y: scroll;
+}
+#contentcontainer{
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+#taglist{
+	padding: 0;
+	height: 100vh;
+	overflow-y: scroll;
+}
+
+#taglist ul{
+	padding:0;
+}
+#taglist li{
+	padding-top: 3%;
+	padding-left: 30%;
+	height: 5vh;
+	width: 100%;
+	list-style: none;
+	background-color: lightgrey;
+}
+#taglist li:hover{
+	border: 1px solid black;
+}
+
+.delimiter{
+	background-color: rgba(155,200,0,1)!important;
+	font-size: 20px;
+	font-style: bold;
+	padding-top: 3%;
+	padding-left: 30%;
+	height: 5vh;
+	width: 100%;
+	list-style: none;
+	background-color: lightgrey;
+	margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+   .delimiter{
+   	padding-bottom: 50%!important;
+   	padding-right: 5%!important;
+   	padding-left: 5%!important;
+   }
+
+   #taglist li{
+	height: 9vh;
+   }
+}

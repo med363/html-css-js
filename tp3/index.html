@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        border: 1px solid white;
+        background-color: rgba(128, 128, 128, 0.219);
+
+    }
+    footer{
+        border: 1px solid white;
+        background-color: rgba(128, 128, 128, 0.219);
+
+    }
+    footer p{
+        text-align: center;
+    }
+
+    nav ul{
+        display: flex;
+
+    }
+    nav li{
+        list-style: none;   }
+        tbody tr:nth-child(odd){
+            border: 1px solid white;
+        background-color: rgba(128, 128, 128, 0.219);
+
+
+        }
+        label {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 130px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+
+label[name="mail"]{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 225px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+label[name="nom"]{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 230px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+label[name="prenom"]{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 209px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+label[name="Tel"]{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 12px 192px 12px 0;
+    /*space mabin les blocks*/
+  display: inline-block;
+}
+
+
+
+    input:valid{
+      background-color: rgba(0, 128, 0, 0.111);  
+    }
+    input:invalid{
+     background-color: rgba(199, 29, 57, 0.129);  
+    } 
+
+    fieldset{
+        border-radius: 10px;
+        width: 600px;
+
+    }
+    .b{
+        margin-left: 513px;
+    }
+    .b2{
+        margin-left: 600px;
+        background-color: white;
+    }
+</style>
+<body>
+    <header>
+        <h1>Gestionnaire de contacts</h1>
+        <nav>
+            <ul>
+                <li><a href=#>Accueil</a></li>
+                <li>/</li>
+                <li>Clients</li>
+                </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Ajout / modification d'un contact</h3>
+        <article>
+            <details>
+                <summary>
+                    Click to show the form.
+                </summary>
+                <form>
+                    <fieldset>
+                    <legend>Nouveau contact</legend><br/>
+                    <label name="nom">Nom:</label>
+                    <input type="text" required /><br/>
+                    <label name="prenom">Prénom:</label>
+                    <input type="text" required /><br/>
+                    <label name="Tel">Téléphone:</label>
+                    <input type="text" required placeholder="No téléphone"/><br/>
+                    <label name="mail">Email:</label>
+                    <input type="mail"/><br/>
+                    <label >Date de naissance:</label>
+                    <input type="date"/><br/>
+                    <label >Nombre d'enfants:</label>
+                    <input type="range" min="0" max="5"/>
+                    <br/>
+                </fieldset>
+                </form>            <button class="b2">ok</button>
+
+
+            </details>
+        </article>
+        <p>A venir...</p>
+        <h3>Liste des contacts</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                    <th>Date de naissance</th>
+                    <th>Nombre enfants</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jean</td>
+                    <td>Marais</td>
+                    <td>0613243443</td>
+                    <td>jeanmarais@acteur.fr</td>
+                    <td>17/08/945</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Johny</td>
+                    <td>Halliday</td>
+                    <td>06564533434</td>
+                    <td>johnny.halliday@rocker.fr</td>
+                    <td>17/08/1952</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Eddy</td>
+                    <td>Mitchell</td>
+                    <td>0656453423</td>
+                    <td>eddy.mitchell@rocker.fr</td>
+                    <td>17/08/1956</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+  </section>
+  <button class="b">Nouveau client</button>  
+
+    <footer>
+<p>Gestionnaire de contacts - 2022</p>
+    </footer>
+    
+    
+</body>
+</html>
